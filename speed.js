@@ -1,3 +1,4 @@
+const prompt = require("prompt-sync")();
 function calculateDemeritPoints(speed) {
     const speedLimit = 70;
     const kmPerPoint = 5;
@@ -23,4 +24,5 @@ function calculateDemeritPoints(speed) {
   } else {
     console.log("Invalid input. Please enter a valid number.");
   }
+  calculateDemeritPoints(100);
   

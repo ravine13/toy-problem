@@ -28,4 +28,4 @@ function assignGrade(marks) {
   if (grade !== undefined) {
     console.log((`Your grade is: ${grade}`));
   }
-  assignGrade(90);
+  //assignGrade(90);
