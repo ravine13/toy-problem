@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 function assignGrade(marks) {
     if(isNaN(marks) || marks < 0 || marks > 100){
     }
@@ -21,9 +23,9 @@ function assignGrade(marks) {
   
   const userInput = prompt("Please enter your marks (0-100):");
   const marks = parseFloat(userInput);
-  const grade = calculateGrade(marks);
+  const grade = assignGrade(marks);
   
   if (grade !== undefined) {
-    alert(`Your grade is: ${grade}`);
+    console.log((`Your grade is: ${grade}`));
   }
-  assignGrade();
+  assignGrade(90);
